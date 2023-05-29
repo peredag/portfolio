@@ -185,10 +185,6 @@
                         </a>
                     </div>
                 </div>
-
-
-
-
             </div> 
         </section>
 
@@ -203,14 +199,16 @@
                         <p>Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
                     </div>
     
-                    <form id="form" class="form-contact" name="contacto-portafolio" netlify>
+                    <form id="form" class="form-contact" name="contacto-portafolio" action="https://formsubmit.co/eb77527da41d3169a2bec481e8b4dd4c" method="POST">
                         <input id="nombre" type="text" name="name" placeholder="Nombre" required>
                         <input id="email" type="email" name="email" placeholder="E-mail" required>
                         <input id="asunto" type="text" name="affair" placeholder="Asunto" required>
                         <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje" required></textarea>
-    
+                       
                         <div class="btn_form--contacto">
-                            <button id="btn-enviar" type="submit">Enviar</button>
+                            <input type="submit" value="enviar">
+                            <input type="hidden" name="_next" value="https://gretapereda.vercel.app/">
+                            <input type="hidden" name="_captcha" value="false">
                         </div>
                     </form>
                 </div>
